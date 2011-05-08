@@ -1,9 +1,9 @@
-#summary One-sentence summary of this page.
+#summary Useful Datasheets.
 
 = Datasheets=
 
 Useful datasheets:
 
-[http://code.google.com/p/iha-projectb/downloads/detail?name=AVR_STK500_UserGuide.pdf&can=2&q= STK500 User Guide]
+[http://iha-projectb.googlecode.com/files/AVR_STK500_UserGuide.pdf STK500 User Guide]
 
-[http://code.google.com/p/iha-projectb/downloads/detail?name=ATmega32.pdf&can=2&q= ATMega32 Datasheet]
+[http://iha-projectb.googlecode.com/files/ATmega32.pdf ATMega32 Datasheet]
