@@ -1,0 +1,9 @@
+#summary One-sentence summary of this page.
+
+= Datasheets=
+
+Useful datasheets:
+
+[http://code.google.com/p/iha-projectb/downloads/detail?name=AVR_STK500_UserGuide.pdf&can=2&q= STK500 User Guide]
+
+[http://code.google.com/p/iha-projectb/downloads/detail?name=ATmega32.pdf&can=2&q= ATMega32 Datasheet]
