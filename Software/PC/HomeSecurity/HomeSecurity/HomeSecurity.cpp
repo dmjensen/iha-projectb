@@ -12,7 +12,7 @@
 #define std_out std::cout
 #endif
 
-#define conf_file "D:\\plan.xml"
+#define conf_file "plan.xml"
 
 using namespace std;
 
