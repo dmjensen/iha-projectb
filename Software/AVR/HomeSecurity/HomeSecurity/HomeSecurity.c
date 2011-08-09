@@ -8,8 +8,9 @@ int main(void)
 	
 	no_devices = 0;
 	
-	RTC_init();
-	USART_Init();
+//	RTC_init();
+//	USART_Init();
+	X10_Init();
 	
 	//devices[0].id = 100;
 	//devices[0].no_events = 2;
@@ -25,15 +26,18 @@ int main(void)
 	
 	while(1)
 	{
-		if(t.hour%2 != 0 )
-		{
-			PORTC &= ~(1<<7);
-		}
-		else
-		{
-			PORTC |= 1<<7;
-		}			
-
-			
+		int i;
+		//if(t.hour%2 != 0 )
+		//{
+			//PORTC &= ~(1<<7);
+		//}
+		//else
+		//{
+			//PORTC |= 1<<7;
+		//}
+		
+		for(i=0; i < 10000; i++);
+		write_command(HOUSE_A, UNIT_2, 2);
+		
 	}; //loop forever
 }

@@ -33,20 +33,17 @@ void RTC_init(void)
 	/* disable interrupts */
 	cli();
 
-	/*enable timer overflow interrupt*/
-	//TIMSK = 1<<TOV0;
-	
 	/*enable timer compare match interrupt*/
-	TIMSK = 1 << 1;
+	TIMSK = 1 << OCIE0;
 
 	/*set timer counter initial value*/
 	TCNT0=0x00;
 	
 	/*set compare match value*/
-	OCR0 = 127;
+	OCR0 = 30;
 
-	/*start timer with prescaler: 8 , Clear timer on compare match (CTC) mode*/
-	TCCR0 = 1 << 1 | 1 << 6;
+	/*start timer with prescaler: 1024 , Clear timer on compare match (CTC) mode*/
+	TCCR0 = 1 << CS02 | 1 << CS00 | 1 << WGM01;
 	
 	/* enable interrupts */
 	sei();

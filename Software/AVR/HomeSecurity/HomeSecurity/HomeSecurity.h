@@ -13,10 +13,14 @@
 //Device id offset
 #define ID_OFFSET -100
 
+#define TRUE 0x01
+#define FALSE 0x00
+
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include "RTC/RTC.h" //Real Time Clock
 #include "USART/USART.h"
+#include "X10/X10.h"
 
 typedef struct
 { 

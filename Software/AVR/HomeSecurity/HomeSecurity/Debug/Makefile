@@ -40,6 +40,7 @@ OUTPUT_FILE_DEP:=
 
 # Every subdirectory with source files must be described here
 SUBDIRS :=  \
+../X10 \
 ../USART \
 ../RTC
 
@@ -48,7 +49,8 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../HomeSecurity.c \
 ../RTC/RTC.c \
-../USART/USART.c
+../USART/USART.c \
+../X10/X10.c
 
 
 PREPROCESSING_SRCS += 
@@ -60,25 +62,29 @@ ASM_SRCS +=
 OBJS +=  \
 HomeSecurity.o \
 RTC/RTC.o \
-USART/USART.o
+USART/USART.o \
+X10/X10.o
 
 
 OBJS_AS_ARGS +=  \
 HomeSecurity.o \
 RTC/RTC.o \
-USART/USART.o
+USART/USART.o \
+X10/X10.o
 
 
 C_DEPS +=  \
 HomeSecurity.d \
 RTC/RTC.d \
-USART/USART.d
+USART/USART.d \
+X10/X10.d
 
 
 C_DEPS_AS_ARGS +=  \
 HomeSecurity.d \
 RTC/RTC.d \
-USART/USART.d
+USART/USART.d \
+X10/X10.d
 
 
 OUTPUT_FILE_PATH +=HomeSecurity.elf
@@ -115,6 +121,8 @@ OUTPUT_FILE_DEP:= ./Outputfile.d
 
 
 
+
+
 ./%.o: .././%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler
@@ -128,6 +136,12 @@ RTC/%.o: ../RTC/%.c
 	@echo Finished building: $<
 
 USART/%.o: ../USART/%.c
+	@echo Building file: $<
+	@echo Invoking: AVR/GNU C Compiler
+	$(QUOTE)$(AVR_APP_PATH)avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O0 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99  -mmcu=atmega32   -MD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
+	@echo Finished building: $<
+
+X10/%.o: ../X10/%.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler
 	$(QUOTE)$(AVR_APP_PATH)avr-gcc.exe$(QUOTE) -funsigned-char -funsigned-bitfields -O0 -fpack-struct -fshort-enums -g2 -Wall -c -std=gnu99  -mmcu=atmega32   -MD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o"$@" "$<"
