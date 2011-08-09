@@ -8,8 +8,8 @@ int main(void)
 	
 	no_devices = 0;
 	
-//	RTC_init();
-//	USART_Init();
+	RTC_init();
+	USART_Init();
 	X10_Init();
 	
 	//devices[0].id = 100;
@@ -36,8 +36,15 @@ int main(void)
 			//PORTC |= 1<<7;
 		//}
 		
-		for(i=0; i < 10000; i++);
+		for(i=0; i < 100000; i++);
+		//Turn on Unit 2 in House A
 		write_command(HOUSE_A, UNIT_2, 2);
+		write_command(HOUSE_A, ON, 2);
+		
+		for(i=0; i < 100000; i++);
+		//Turn off Unit 2 in House A
+		write_command(HOUSE_A, UNIT_2, 2);
+		write_command(HOUSE_A, ON, 2);
 		
 	}; //loop forever
 }
