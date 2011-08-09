@@ -135,13 +135,9 @@ void send_bits(unsigned char bits, unsigned char num_bits, unsigned char is_star
 		if(is_start_code != TRUE)
 		{
 			if (current_bit != 0)
-			{
 				send_bit(0);
-			} 
 			else
-			{
 				send_bit(1);
-			}
 		}
 			
 	}
