@@ -1,0 +1,6 @@
+Test where house code A, Unit 2 is adressed (as in AN236 X10 Application Note).
+The observed pattern is:
+1110 01101001 10101001 01 
+1110 01101001 10101001 01
+
+Which corresponds to the example on page 13 in AN236 X10 Application Note.

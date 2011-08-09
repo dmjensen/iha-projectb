@@ -72,8 +72,15 @@
     <Compile Include="USART\USART.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="X10\X10.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="X10\X10.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="X10" />
     <Folder Include="USART" />
     <Folder Include="RTC" />
   </ItemGroup>
