@@ -8,7 +8,7 @@ int main(void)
 	
 	no_devices = 0;
 	
-	RTC_init();
+	//RTC_init();
 	USART_Init();
 	X10_Init();
 	
@@ -24,27 +24,48 @@ int main(void)
 	
 	PORTC = 0xFF; //turn LEDs off
 	
+	
+	/*Set Frame Format
+   >> Asynchronous mode
+   >> No Parity
+   >> 1 StopBit
+   >> char size 8
+   */
+
+   UCSRC=(1<<URSEL)|(3<<UCSZ0);
+
+
+   //Enable The receiver and transmitter
+   UCSRB=(1<<RXEN)|(1<<TXEN);
+	
 	while(1)
 	{
-		int i;
-		//if(t.hour%2 != 0 )
-		//{
-			//PORTC &= ~(1<<7);
-		//}
-		//else
-		//{
-			//PORTC |= 1<<7;
-		//}
+		unsigned char data;
+		//Wait until a data is available
+		while(!(UCSRA & (1<<RXC)));
+		data = UDR;
 		
-		for(i=0; i < 100000; i++);
-		//Turn on Unit 2 in House A
-		write_command(HOUSE_A, UNIT_2, 2);
-		write_command(HOUSE_A, ON, 2);
-		
-		for(i=0; i < 100000; i++);
-		//Turn off Unit 2 in House A
-		write_command(HOUSE_A, UNIT_2, 2);
-		write_command(HOUSE_A, ON, 2);
+		if(data == 0xAA)
+		{
+			//Turn on Unit 2 in House A
+			write_command(HOUSE_A, UNIT_2, 2);
+			write_command(HOUSE_A, ON, 2);
+			
+			//Debug turn on LED0
+			PORTC &= ~(0x01);
+		}
+		else if(data == 0xFF)
+		{
+			//Turn off Unit 2 in House A
+			write_command(HOUSE_A, UNIT_2, 2);
+			write_command(HOUSE_A, OFF, 2);
+			
+			//Debug turn off LED0
+			PORTC |= 0x01;
+		}
+		//else ignore data
+
+	
 		
 	}; //loop forever
 }
