@@ -1,9 +1,74 @@
-﻿Build started 09-08-2011 15:01:18.
-     1>Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\HomeSecurity\HomeSecurity.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\HomeSecurity.lastbuildstate".
-     1>Done Building Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\HomeSecurity\HomeSecurity.vcxproj" (clean target(s)).
+﻿Build started 15-08-2011 09:23:05.
+     1>Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\HomeSecurity\HomeSecurity.vcxproj" on node 2 (rebuild target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\HomeSecurity.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\HomeSecurity.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"..\StdAfx.h" /Fp"Debug\HomeSecurity.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Entities\Device.cpp Entities\Event.cpp XML\XMLFile.cpp
+         XMLFile.cpp
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(46): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(601) : see declaration of '_wfopen'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(125): warning C4996: '_wfopen': This function or variable may be unsafe. Consider using _wfopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(601) : see declaration of '_wfopen'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(292): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(293): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(307): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(373): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(374): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(412): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(1013) : see declaration of 'wcsncpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(414): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(1013) : see declaration of 'wcsncpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(435): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(436): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(988) : see declaration of 'wcscpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(682): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(1013) : see declaration of 'wcsncpy'
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\xml\xmlfile.cpp(811): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\wchar.h(1013) : see declaration of 'wcsncpy'
+         Event.cpp
+         Device.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\HomeSecurity.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt HomeSecurity.cpp Serial\Serial.cpp
+         Serial.cpp
+         HomeSecurity.cpp
+     1>d:\documents\2. quarter\project_b\projectb-svn\software\pc\homesecurity\homesecurity\homesecurity.cpp(179): warning C4309: '=' : truncation of constant value
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\HomeSecurity.exe.embed.manifest.res" Debug\HomeSecurity_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HomeSecurity.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.lib" /MACHINE:X86 Debug\HomeSecurity.exe.embed.manifest.res
+         Debug\Device.obj
+         Debug\Event.obj
+         Debug\HomeSecurity.obj
+         Debug\Serial.obj
+         Debug\stdafx.obj
+         Debug\XMLFile.obj
+       Manifest:
+         Deleting file "Debug\HomeSecurity.exe.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\HomeSecurity.exe.embed.manifest" /manifest Debug\HomeSecurity.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\HomeSecurity.exe.embed.manifest.res" Debug\HomeSecurity_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\HomeSecurity.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.lib" /MACHINE:X86 Debug\HomeSecurity.exe.embed.manifest.res
+         Debug\Device.obj
+         Debug\Event.obj
+         Debug\HomeSecurity.obj
+         Debug\Serial.obj
+         Debug\stdafx.obj
+         Debug\XMLFile.obj
+         HomeSecurity.vcxproj -> D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\Debug\HomeSecurity.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\HomeSecurity.unsuccessfulbuild".
+         Touching "Debug\HomeSecurity.lastbuildstate".
+     1>Done Building Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecurity\HomeSecurity\HomeSecurity.vcxproj" (rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.49
+Time Elapsed 00:00:05.84

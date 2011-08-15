@@ -226,10 +226,12 @@ private: System::Void programConf_button_Click(System::Object^  sender, System::
 private: System::Void turnOnLamp_Button_Click(System::Object^  sender, System::EventArgs^  e)
 		 {
 			 HSconfig->sendByteSerial(0xAA);
+			 toolStripStatusLabel->Text = "Turn on command sent to AVR";
 		 }
 private: System::Void turnOfLamp_button_Click(System::Object^  sender, System::EventArgs^  e)
 		 {
 			 HSconfig->sendByteSerial(0xFF);
+			 toolStripStatusLabel->Text = "Turn off command sent to AVR";
 		 }
 };
 }

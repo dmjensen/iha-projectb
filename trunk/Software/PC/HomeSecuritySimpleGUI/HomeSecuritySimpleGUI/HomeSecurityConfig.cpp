@@ -5,6 +5,7 @@
 HomeSecurityConfig::HomeSecurityConfig()
 {
 	s = new CSerial();
+	s->Open(COM_PORT_NO, BAUD_RATE); //TODO: Error checking
 }
 
 HomeSecurityConfig::~HomeSecurityConfig()
