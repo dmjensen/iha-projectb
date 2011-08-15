@@ -1,9 +1,37 @@
-﻿Build started 15-08-2011 14:37:14.
-     1>Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\HomeSecuritySimpleGUI.lastbuildstate".
-     1>Done Building Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI.vcxproj" (clean target(s)).
+﻿Build started 15-08-2011 16:28:17.
+     1>Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\HomeSecuritySimpleGUI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W1 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\HomeSecuritySimpleGUI.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt HomeSecuritySimpleGUI.cpp /clr:nostdlib 
+         HomeSecuritySimpleGUI.cpp
+         All outputs are up-to-date.
+       CoreResGen:
+         All outputs are up-to-date.
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\Debug\HomeSecuritySimpleGUI.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:Debug\HomeSecuritySimpleGUI.MainWindow.resources /MANIFEST /ManifestFile:"Debug\HomeSecuritySimpleGUI.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\Debug\HomeSecuritySimpleGUI.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\Device.obj
+         Debug\Event.obj
+         Debug\HomeSecurityConfig.obj
+         Debug\HomeSecuritySimpleGUI.obj
+         Debug\Serial.obj
+         Debug\stdafx.obj
+         Debug\XMLFile.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         HomeSecuritySimpleGUI.vcxproj -> D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\Debug\HomeSecuritySimpleGUI.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\Debug\HomeSecuritySimpleGUI.exe;#1" /manifest Debug\HomeSecuritySimpleGUI.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\HomeSecuritySimpleGUI.unsuccessfulbuild".
+         Touching "Debug\HomeSecuritySimpleGUI.lastbuildstate".
+     1>Done Building Project "D:\Documents\2. Quarter\Project_B\ProjectB-SVN\Software\PC\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI\HomeSecuritySimpleGUI.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.04
+Time Elapsed 00:00:02.23
