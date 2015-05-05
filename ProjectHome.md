@@ -1,0 +1,1 @@
+Prototype for controlling X10 devices from a PC. This will be implemented using an ATMega32 microcontroller mounted on a STK500 development board, which will act as an interface between the PC and the power line.
